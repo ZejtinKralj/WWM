@@ -2,16 +2,22 @@ document.addEventListener('DOMContentLoaded', function () {
   var preloader = anime.timeline();
   document.querySelector('html').style.overflow = 'hidden';
 
-  preloader.add({
+  preloader
+  .add({
+    targets: '#first, #second, #third',
+    opacity: [0, 1],
+    duration: 1500
+  })
+  .add({
     targets: '.first-word',
     delay: 1000,
     translateX: [90, -70],
     easing: 'easeOutCubic'
-  }).add({
+  }, '-=700').add({
     targets: '.third-word',
-    translateX: [-70, 70],
+    translateX: [-70, 90],
     easing: 'easeOutCubic'
-  }).add({
+  }, '-=1000').add({
     targets: '#third',
     rotate: 180,
     duration: 700,
@@ -66,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
       duration: 1300,
       translateY: '-100px',
       easing: 'easeInOutExpo',
-      delay: 8000
+      delay: 7500
     }, '-=500')
     .add({
       targets: '.dots',
