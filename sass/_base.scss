@@ -1,0 +1,61 @@
+/*
+Grey light 1: #f2f9f9
+Grey light 1: #f4f2f2
+Grey light 1: #f0eeee
+Grey light 1: #ccc
+
+Grey dark 1: #333;
+Grey dark 2: #777
+Grey dark 3: #999
+*/
+
+$grey-dark-1: #2e2e2e;
+$color-primary: #f34848;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden!important; 
+  
+}
+
+@media only screen and (max-width: 1380px) {
+  html {
+    font-size: 57%;
+
+  }
+}
+body {
+  min-height: 100vh;
+  font-size: 1.6rem;
+  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
+  color: #efefef;
+  line-height: 2.3rem;
+  letter-spacing: .5px;
+  
+}
+
+li {
+  list-style: none;
+}
+a {
+  opacity: .8;
+  text-decoration: none;
+  color: #fff;
+  transition: .5s opacity;
+  font-size: 1.5rem;
+  &:hover {
+    opacity: 1;
+    
+  }
+}
+
+
+
